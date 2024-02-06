@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Brootahh';
+    src: url('../src/Fonts/Brootahh-Regular.ttf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.page-header {
+    background-color: blue;
+    width: 100vw;
+    height: 30px;
+}
+
+.buttons-home {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.home-button,
+.menu-button,
+.contact-button {
+    background-image: url('../src/Images/menu-buttons.png');
+    background-size: cover;
+    width: 150px;
+    height: 112.5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding-top: 22px;
+}
+
+.home-button:hover,
+.menu-button:hover,
+.contact-button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+}
+
+/* animate blood effect on hover */
+
+.page-logo {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+
+}
+
+
+.box {
+    background-color: white;
+    border: 1px solid white;
+    min-height: 60px;
+    min-width: 60px;
+    display: flex;
+}
+
+.red-box {
+    min-height: 60px;
+    min-width: 60px;
+    border: 1px solid crimson;
+    display: flex;
+    background-color: crimson;
+}
+
+
+.row1 {
+    display: flex;
+
+}
+
+.row2 {
+    display: flex;
+}
+
+
+.row1 .box {
+    flex-grow: 1;
+    aspect-ratio: 1;
+}
+
+.row2 .red-box {
+    flex-grow: 1;
+    aspect-ratio: 1;
+}
+
+.pizza-whirled-logo {
+    display: flex;
+}
+
+
+#checkerboard {
+    position: relative;
+    border-bottom: black solid 3px;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    right: 40%;
+}
+
+.buttons-home {
+    display: flex;
+    justify-content: center;
+}
+
+.home-page-body {
+    width: 100vw ;
+    height: 87vh;
+    background-image: url('../src/Images/home-page-pizza.png');
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0, 0.5); 
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+
+}
+
+.menu-page-body {
+    width: 100vw;
+    height: 87vh;
+    background-image: url('../src/Images/home-page-pizza.png');
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0, 0.5); 
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+}
+
+.contact-page-body {
+    width: 100vw;
+    height: 87vh;
+    background-image: url('../src/Images/home-page-pizza.png');
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0, 0.5); 
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+}
+
+.contact-page-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
